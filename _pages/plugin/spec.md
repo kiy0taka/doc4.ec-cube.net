@@ -112,8 +112,8 @@ SamplePlugin
 
 Twigファイルからこの `sample.jpg` へのパスは以下の記述で取得できます。
 
-```
-{{ asset('SamplePlugin/assets/sample.jpg', 'plugin') }}
+```twig
+{% raw %}{{ asset('SamplePlugin/assets/sample.jpg', 'plugin') }}{% endraw %}
 ```
 
 展開されたパスは以下のようになります。
